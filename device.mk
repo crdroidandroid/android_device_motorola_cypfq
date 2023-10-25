@@ -98,6 +98,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/unavail.android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/unavail.android.software.nfc.beam.xml
+
 # Gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
