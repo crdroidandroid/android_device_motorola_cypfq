@@ -21,6 +21,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Inherit from motorola sm6375-common
 $(call inherit-product, device/motorola/sm6375-common/common.mk)
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResPenang \
