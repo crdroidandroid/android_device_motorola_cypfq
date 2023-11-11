@@ -14,19 +14,19 @@ TARGET_BOOTLOADER_BOARD_NAME := penang
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=penang
-TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
+#TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
 
-#BOARD_KERNEL_BINARIES := kernel
-#BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
-#TARGET_FORCE_PREBUILT_KERNEL := true
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel
-#TARGET_KERNEL_CONFIG := holi_QGKI
-#TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
-#PRODUCT_COPY_FILES += \
-#    $(DEVICE_PATH)-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
-#    $(DEVICE_PATH)-kernel/kernel:kernel \
-#    $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
-#    $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/vendor-modules/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+BOARD_KERNEL_BINARIES := kernel
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel
+TARGET_KERNEL_CONFIG := holi_QGKI
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
+    $(DEVICE_PATH)-kernel/kernel:kernel \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/vendor-modules/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
