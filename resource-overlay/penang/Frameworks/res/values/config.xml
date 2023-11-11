@@ -268,7 +268,7 @@
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motog715G</string>
+    <string name="config_mms_user_agent" translatable="false">motog53j5G</string>
     <!-- MMS user agent profile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
 

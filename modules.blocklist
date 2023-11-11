@@ -100,8 +100,19 @@ blocklist moto_f_usbnet
 #
 
 blocklist fpsensor_spi_tee
-blocklist goodix_fod_mmi
 blocklist fpc1020_mmi
-blocklist mmi_smbcharger_iio
 blocklist qpnp_adaptive_charge
-blocklist mmi_parallel_charger_iio.ko
+blocklist nova_0flash_mmi
+blocklist tcpc_class
+blocklist tcpc_rt1711h
+blocklist tcpc_sgm7220.ko
+blocklist tcpc_rt1711h
+blocklist rt_pd_manager
+blocklist mmi_charger
+blocklist mmi_discrete_charger_class
+blocklist mmi_discrete_charger
+blocklist sgm4154x_charger
+blocklist bq2589x_charger
+blocklist leds_aw99703
+blocklist leds_lm3697
+blocklist focaltech_0flash_v2_mmi

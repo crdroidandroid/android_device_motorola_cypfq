@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=corfur
+export DEVICE=penang
 export DEVICE_COMMON=sm6375-common
 export VENDOR=motorola
 export VENDOR_COMMON=${VENDOR}
