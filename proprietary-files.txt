@@ -382,23 +382,29 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # MotCamera4
--product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
-product/etc/init/init.motcamera3.lens.rc
--product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture;PRESIGNED
-system_ext/etc/public.libraries-motocameradesktop.txt
+#-product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+#product/etc/init/init.motcamera3.lens.rc
+#-product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture;PRESIGNED
+#system_ext/etc/public.libraries-motocameradesktop.txt
 #system_ext/framework/com.motorola.androidx.camera.extensions.jar
 #system_ext/lib/libmcf_native_window_helper.motocamera.so
 #system_ext/lib64/libmcf_native_window_helper.motocamera.so
 
 # MotCamera4 - Permissions
-product/etc/permissions/com.motorola.camera3.content.ai.xml
-product/etc/permissions/com.motorola.camera3.lens.xml
-product/etc/permissions/com.motorola.camera3.xml
-product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
-product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
-product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
-system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
+#product/etc/permissions/com.motorola.camera3.content.ai.xml
+#product/etc/permissions/com.motorola.camera3.lens.xml
+#product/etc/permissions/com.motorola.camera3.xml
+#product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
+#product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
+#product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
+#system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
 
 # NFC - configs
 #vendor/etc/libnfc-hal-st.conf
@@ -414,6 +420,17 @@ vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 # NFC firmware
 #vendor/firmware/st21nfc_fw.bin
 #vendor/firmware/st21nfc_fw7.bin
+
+# Felica
+product/etc/felica/common.cfg
+product/etc/felica/mfm.cfg
+product/etc/felica/mfs.cfg
+
+# Felica - configs
+product/etc/sysconfig/com.felicanetworks.mfm.main.powersave.xml
+product/etc/sysconfig/com.felicanetworks.mfw.a.boot.powersave.xml
+product/etc/sysconfig/com.felicanetworks.mfc.powersave.xml
+product/etc/sysconfig/com.felicanetworks.mfs.powersave.xml
 
 # OEM
 vendor/etc/vhw.xml
@@ -573,3 +590,23 @@ vendor/etc/thermal-engine-penang-game-normal.conf
 vendor/etc/thermal-engine-penang-game-perf.conf
 vendor/etc/thermal-engine-penang.conf
 vendor/etc/thermal-engine.conf
+
+# EUICC
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+product/etc/permissions/android.hardware.telephony.euicc.xml
+product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
+
+# Touch firmware
+vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
+
+# Misc
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
+vendor/firmware/djn_novatek_ts_fw.bin
+vendor/firmware/djn_novatek_ts_mp.bin
