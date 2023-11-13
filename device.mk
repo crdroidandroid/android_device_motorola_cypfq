@@ -37,6 +37,11 @@ PRODUCT_PACKAGES += \
     EuiccOverlayPenang \
     RegulatoryInfoOverlayPenang
 
+PRODUCT_PACKAGES += \
+    FrameworksResPenangSB \
+    SettingsProviderResPenangSB \
+    RegulatoryInfoOverlayPenangSB    
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
