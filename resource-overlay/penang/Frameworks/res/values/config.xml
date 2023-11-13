@@ -135,14 +135,15 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -35,0
-        L 35,0
-		L 35,105
-		L -35,105
-		Z
-	</string>
+        M 0,0
+        h -28.9
+        v 85
+        h 59.5
+        v -85
+        Z
+    </string>
 
-	<!-- Indicate whether to allow the device to suspend when the screen is off
+    <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
          Otherwise, the device may fail to wake out of suspend reliably.
