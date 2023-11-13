@@ -83,5 +83,8 @@ PRODUCT_PACKAGES += \
     Tag \
     nfc_nci.st21nfc.default
 
+# Gapps
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/penang/penang-vendor.mk)
