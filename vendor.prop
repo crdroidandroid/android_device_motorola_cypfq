@@ -16,3 +16,6 @@ ro.soc.model=SM4350
 # Surfaceflinger
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.has_wide_color_display=false
+
+# Radio
+persist.radio.multisim.config=dsds
