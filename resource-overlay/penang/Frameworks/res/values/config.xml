@@ -285,6 +285,12 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
+         the framework from using higher refresh rates, even if display modes with higher refresh
+         rates are available from hardware composer. Only has an effect if the value is
+         non-zero. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">motog53j5G</string>
     <!-- MMS user agent profile url -->
