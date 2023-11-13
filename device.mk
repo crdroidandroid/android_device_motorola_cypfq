@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     LineageSystemUIPenang \
     SettingsProviderResPenang \
     SystemUIResPenang \
-    EuiccOverlayPenang
+    EuiccOverlayPenang \
+    RegulatoryInfoOverlayPenang
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
