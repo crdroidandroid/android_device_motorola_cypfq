@@ -47,7 +47,6 @@ static const char *snet_prop_key[] = {
     "ro.build.type",
     "ro.build.tags",
     "ro.build.selinux",
-    "sys.oem_unlock_allowed",
     NULL
 };
 
@@ -64,7 +63,6 @@ static const char *snet_prop_value[] = {
     "user",
     "release-keys",
     "1",
-    "0",
     NULL
 };
 
