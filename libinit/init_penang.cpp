@@ -18,6 +18,7 @@ static const variant_info_t global_info = {
     .model = "moto g53j 5G",
     .name = "penang_g",
     .build_fingerprint = "motorola/penang_g/penang:13/T1TPS33M.1-73-2-2/723bee5:user/release-keys",
+    .build_description = "penang_g-user 13 T1TPS33M.1-73-2-2 723bee5 release-keys",
 };
 
 static const variant_info_t ym_info = {
@@ -26,6 +27,7 @@ static const variant_info_t ym_info = {
     .model = "moto g53y 5G",
     .name = "penang_sb",
     .build_fingerprint = "motorola/penang_sb/penang:13/T1TPJ33M.75-17-3/9c2f6:user/release-keys",
+    .build_description = "penang_sb-user 13 T1TPJ33M.75-17-3 9c2f6 release-keys",
 };
 
 static const std::vector<variant_info_t> variants = {
