@@ -59,7 +59,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_penang
 TARGET_RECOVERY_DEVICE_MODULES := init_penang
 
 # Security
-VENDOR_SECURITY_PATCH := 2023-09-01
+VENDOR_SECURITY_PATCH := 2023-06-01
 
 # inherit from the proprietary version
 include vendor/motorola/penang/BoardConfigVendor.mk
