@@ -593,6 +593,9 @@ vendor/etc/thermal-engine-penang-game-perf.conf
 vendor/etc/thermal-engine-penang.conf
 vendor/etc/thermal-engine.conf
 
+# QCCSysHal
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+
 # EUICC
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 product/etc/permissions/android.hardware.telephony.euicc.xml
