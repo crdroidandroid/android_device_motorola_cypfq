@@ -87,13 +87,14 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
     android.hardware.nfc@1.2.vendor \
-    android.hardware.nfc@1.2-service.st \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     libchrome.vendor \
-    Tag \
-    nfc_nci.st21nfc.default
+    NfcNci \
+    SecureElement \
+    Tag
 
 # Gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
