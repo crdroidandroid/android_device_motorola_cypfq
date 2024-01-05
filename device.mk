@@ -32,6 +32,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     FrameworksResPenang \
     LineageSystemUIPenang \
+    LineageSettingsPenang \
     SettingsProviderResPenang \
     SystemUIResPenang \
     EuiccOverlayPenang \
