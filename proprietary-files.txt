@@ -608,13 +608,6 @@ product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
 
 # Misc
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
 vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/djn_novatek_ts_mp.bin
