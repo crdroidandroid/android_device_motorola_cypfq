@@ -5,11 +5,11 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1200
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Screen
-TARGET_SCREEN_DENSITY := 280
+TARGET_SCREEN_DENSITY := 432
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -117,8 +117,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/unavail.android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/unavail.android.software.nfc.beam.xml
 
-# Gapps
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/penang/penang-vendor.mk)
+$(call inherit-product, vendor/motorola/cypfq/cypfq-vendor.mk)

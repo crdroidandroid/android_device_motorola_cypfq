@@ -4,13 +4,12 @@ mmi_info.ko
 mmi_annotate.ko
 sensors_class.ko
 moto_f_usbnet.ko
-watchdogtest.ko
 qpnp_adaptive_charge.ko
 wl2864c.ko
 wl2866d.ko
 sensors_class.ko
 touchscreen_mmi.ko
-focaltech_v2_mmi.ko
+ili9882_mmi.ko
 mmi_sys_temp.ko
 mmi-smbcharger-iio.ko
 mmi_sc8549.ko

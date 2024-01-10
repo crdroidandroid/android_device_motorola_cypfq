@@ -9,16 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from penang device
-$(call inherit-product, device/motorola/penang/device.mk)
+$(call inherit-product, device/motorola/cypfq/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_penang
-PRODUCT_DEVICE := penang
+PRODUCT_NAME := lineage_cypfq
+PRODUCT_DEVICE := cypfq
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g53j 5G
+PRODUCT_MODEL := Moto G53 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
