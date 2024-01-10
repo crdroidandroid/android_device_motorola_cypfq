@@ -13,38 +13,18 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := cypfq
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION ?= 3
-BOARD_KERNEL_BASE ?= 0x00000000
 BOARD_DTB_OFFSET ?= 0x01f00000
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8
-BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
-BOARD_KERNEL_CMDLINE += androidboot.memcg=1 lpm_levels.sleep_disabled=1
-BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237
-BOARD_KERNEL_CMDLINE += service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3
-BOARD_KERNEL_CMDLINE += swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket
-BOARD_KERNEL_CMDLINE += pcie_ports=compat loop.max_part=7 iptable_raw.raw_before_defrag=1
-BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1 androidboot.hab.csv=8
-BOARD_KERNEL_CMDLINE += androidboot.hab.cid=50
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=cypfq
-BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_CONFIG := vendor/cypfq_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/cypfq
+TARGET_KERNEL_LLVM_BINUTILS := true
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
-
-# Clang
-#TARGET_KERNEL_CLANG_VERSION := r450784e
-TARGET_KERNEL_LLVM_BINUTILS := true
 
 # Prebuilt
 PREBUILT_KERNEL := true
@@ -56,14 +36,11 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 102247673856
-
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 2121900032
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1044381696
 BOARD_SYSTEM_EXTIMAGE_PARTITION_SIZE := 780140544
-
-BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 4961861632 # ((SUPER_PARTITION_SIZE / 2) - 4194304)
-BOARD_SUPER_PARTITION_SIZE := 4966055936
+BOARD_SUPER_PARTITION_SIZE := 13757317120
+BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 6874464256
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
