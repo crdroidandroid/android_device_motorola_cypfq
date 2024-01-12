@@ -67,4 +67,4 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_ma
 VENDOR_SECURITY_PATCH := 2023-12-01
 
 # inherit from the proprietary version
-include vendor/motorola/penang/BoardConfigVendor.mk
+include vendor/motorola/cypfq/BoardConfigVendor.mk
