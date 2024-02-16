@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=rhode
+export DEVICE=cypfq
 export DEVICE_COMMON=sm6375-common
 export VENDOR=motorola
 
