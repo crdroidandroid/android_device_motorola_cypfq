@@ -13,8 +13,7 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := cypfq
 
 # Kernel
-BOARD_DTB_OFFSET ?= 0x01f00000
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=cypfq
+
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_CONFIG := vendor/cypfq_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/cypfq
@@ -25,15 +24,6 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.l
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
-
-# Prebuilt
-PREBUILT_KERNEL := true
-ifeq ($(PREBUILT_KERNEL), true)
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel/kernel
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/kernel/kernel:kernel
-endif
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 111537008640
