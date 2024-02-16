@@ -51,8 +51,7 @@ on early-init
    insmod /vendor/lib/modules/leds_lm3697.ko
 
 on init
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/nova_0flash_mmi.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/focaltech_0flash_v2_mmi.ko
+    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/ili9882_mmi.ko
 
 on boot
    # vibrator hal need to access this sysfs node for AF noise issue
