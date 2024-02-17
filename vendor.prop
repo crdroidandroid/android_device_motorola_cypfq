@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=moto g53j 5G
+bluetooth.device.default_name=Moto G51
 
 # Camera
 persist.vendor.camera.physical.num=3
