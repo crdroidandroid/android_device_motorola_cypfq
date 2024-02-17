@@ -289,7 +289,7 @@
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motog53j5G</string>
+    <string name="config_mms_user_agent" translatable="false">motog515g</string>
     <!-- MMS user agent profile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
 
@@ -304,5 +304,5 @@
          For example, a multi-sim device can have 2 phones/logical modems, but 3 physical slots,
          or a single SIM device can have 1 phones/logical modems, but 2 physical slots (one eSIM
          and one pSIM) -->
-    <integer name="config_num_physical_slots">2</integer>
+    <integer name="config_num_physical_slots">1</integer>
 </resources>

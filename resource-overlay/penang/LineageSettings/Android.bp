@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSettingsPenang",
+    name: "LineageSettingsCypfq",
     vendor: true,
 }

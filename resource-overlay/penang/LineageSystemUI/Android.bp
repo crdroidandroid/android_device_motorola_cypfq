@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSystemUIPenang",
+    name: "LineageSystemUICypfq",
     vendor: true,
 }
