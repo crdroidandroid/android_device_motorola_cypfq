@@ -47,43 +47,26 @@ on post-fs-data
   chmod 0664 /sys/bus/iio/devices/iio:device5/in_index_sc8549_cp_enable_input
 
 on early-init
-   insmod /vendor/lib/modules/leds_aw99703.ko
-   insmod /vendor/lib/modules/leds_lm3697.ko
+   insmod /vendor/lib/modules/leds-indicator-pwm.ko
 
 on init
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/ili9882_mmi.ko
+    insmod /vendor/lib/modules/ili9882_mmi.ko
 
 on boot
    # vibrator hal need to access this sysfs node for AF noise issue
    chown system system /sys/devices/platform/soc/soc:mot,cam-actuator/onekey_actuator
    chmod 0660 /sys/devices/platform/soc/soc:mot,cam-actuator/onekey_actuator
 
-on boot && property:ro.vendor.mot.gki.path=5.4-gki
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/nfc_i2c.ko
+on boot
+    insmod /vendor/lib/modules/st21nfc.ko
 
 on late-init
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_charger_class.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/sgm4154x_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/bq2589x_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/qpnp_adaptive_charge.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_class.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_sgm7220.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_rt1711h.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/rt_pd_manager.ko
+    insmod /vendor/lib/modules/mmi_parallel_charger_iio.ko
+    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
 
 on charger
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_charger_class.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/sgm4154x_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/bq2589x_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_charger.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/qpnp_adaptive_charge.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_class.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_sgm7220.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/tcpc_rt1711h.ko
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/rt_pd_manager.ko
+    insmod /vendor/lib/modules/mmi_parallel_charger_iio.ko
+    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
 
 service capsense_reset /vendor/bin/capsense_reset
    class core
