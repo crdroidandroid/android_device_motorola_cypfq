@@ -16,7 +16,6 @@ TARGET_BOOTLOADER_BOARD_NAME := cypfq
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_CONFIG := vendor/cypfq_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/cypfq
 TARGET_KERNEL_LLVM_BINUTILS := true
 
 # Kernel Modules
