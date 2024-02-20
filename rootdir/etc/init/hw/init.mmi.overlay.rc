@@ -26,6 +26,9 @@ service vendor.ident-fps-overlay-sh /vendor/bin/init.oem.fingerprint.overlay.sh
     oneshot
     disabled
 
+on init
+    insmod /vendor/lib/modules/ili9882_mmi.ko
+
 on post-fs-data
     exec_start vendor.ident-fps-overlay-sh
     chown system system /dev/fpsensor

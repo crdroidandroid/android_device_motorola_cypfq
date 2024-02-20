@@ -45,7 +45,6 @@ fpc1020_mmi.ko
 rbs_fps_mmi.ko
 wl2864c.ko
 wl2866d.ko
-cci_intf.ko
 sensors_class.ko
 touchscreen_mmi.ko
 ili9882_mmi.ko
@@ -53,5 +52,4 @@ st21nfc.ko
 mmi_sys_temp.ko
 mmi-smbcharger-iio.ko
 mmi_sc8549.ko
-fm_ctrl.ko
 mmi_parallel_charger_iio.ko
