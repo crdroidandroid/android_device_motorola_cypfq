@@ -18,7 +18,7 @@ PRODUCT_NAME := lineage_cypfq
 PRODUCT_DEVICE := cypfq
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G53 5G
+PRODUCT_MODEL := Moto G51 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
