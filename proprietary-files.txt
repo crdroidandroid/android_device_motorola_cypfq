@@ -320,6 +320,10 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # NFC
+vendor/bin/stfactorydemo-vendor
+vendor/etc/libnfc-nci.conf
+vendor/lib/nfc_nci.st21nfc.st.so
+vendor/lib64/nfc_nci.st21nfc.st.so
 vendor/bin/STFlashTool
 
 # NFC - configs
