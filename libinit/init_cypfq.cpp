@@ -15,24 +15,14 @@
 static const variant_info_t global_info = {
     .sku_value = "XT2335-5",
 
-    .model = "moto g53j 5G",
-    .name = "penang_g",
-    .build_fingerprint = "motorola/penang_g/penang:13/T1TPS33M.1-73-2-2/723bee5:user/release-keys",
-    .build_description = "penang_g-user 13 T1TPS33M.1-73-2-2 723bee5 release-keys",
-};
-
-static const variant_info_t ym_info = {
-    .sku_value = "XT2335-4",
-
-    .model = "moto g53y 5G",
-    .name = "penang_sb",
-    .build_fingerprint = "motorola/penang_sb/penang:13/T1TPJ33M.75-17-3/9c2f6:user/release-keys",
-    .build_description = "penang_sb-user 13 T1TPJ33M.75-17-3 9c2f6 release-keys",
+    .model = "moto G51 5G",
+    .name = "cypfq_g",
+    .build_fingerprint = "motorola/cypfq_g/cypfq:12/S2RYAS32M.58-13-12-5-1-4/488d75:user/release-keys",
+    .build_description = "cypfq_g-user 12 S2RYAS32M.58-13-12-5-1-4 488d75 test-keys",
 };
 
 static const std::vector<variant_info_t> variants = {
     global_info,
-    ym_info,
 };
 
 static void workaround_snet_properties() {
