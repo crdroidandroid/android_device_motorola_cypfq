@@ -44,6 +44,8 @@ on early-init
     insmod /lib/modules/rt_pd_manager.ko
     
     insmod /lib/modules/moto_f_usbnet.ko
+
+    insmod /lib/modules/ili9882_mmi.ko
     
     # Force SELinux permissive
     exec u:r:init:s0 root root -- /system/bin/setenforce 0
